@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap');
+/* 
+text: #272418
+body: #DAB319
+nav: #E7E6E3
+article: #FEDE59
+header: #FFE57C
+*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #272418;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: #DAB319;
+}
+header {
+    background-color: #FFE57C;
+    width: 100%;
+    /* display: inline; */
+    height: 100%;
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+.header-title {
+    flex-grow: 2;
+    padding: 70px;
+    font-size: 1.7em;
+}
+button {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #272418;
+    color: #f3efe0;
+    border: 0px solid;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.35);
+    transition: 0.3s all ease;
+    font-weight: 600;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+button:hover {
+    background-color: #f3efe0;
+    color: #272418;
+    border: 2px solid;
+    transform: scale(1.1, 1.1);
+}
+
+
+nav {
+    display: flex;
+    background-color: #ffce1b;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.35);
+}
+iframe {
+    border-radius: 20px;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.35);
+    margin: 20px;
+    /* sementara */
+    /* margin: 20px; */
+}
+
+main {
+    display: flex;
+}
+article {
+    background-color: #f3efe0;
+    max-height: fit-content;
+}
+article h3 {
+    margin: 10px 10px;
+}
+article, aside {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+aside {
+    background-color: #f3efe0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    background-color: #ffce1b;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.35);
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    iframe {
+        margin: 10px auto;
+    }
+    .header-title {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    iframe {
+        width: 90%;
+        height: 240px;
+        margin: 5px auto;
+    }
+    .header-container {
+        padding: 30px;
+    }
+    button {
+        margin: 10px;
+    }
+    h2 {
+
+    }
+}
