@@ -19,13 +19,19 @@ xhr.addEventListener("readystatechange", function () {
         p.appendChild(t2);
         articleOne.appendChild(p); 
     }
+    function hr() {
+        const articleOne = document.querySelector(".article__one");
+        var hr2 = document.createElement("hr");
+        articleOne.appendChild(hr2);
+    }
 
     let counter = 1;
     // Memanfaatkan logika seperti looping dalam menampilkan elemen dan konten.
     for(const key in res) {
         if (this.readyState === this.DONE) {
             // console.log(res[0]);
-            h3(`${counter} . ${res[key].text}`);
+            hr();
+            h3(` ${res[key].text}`);
             paragraph(`URL : ${res[key].url}`);
             paragraph(`Source : ${res[key].source}`);
             paragraph(`Publication : ${res[key].publication}`);
@@ -34,7 +40,7 @@ xhr.addEventListener("readystatechange", function () {
     }
 });
 
-xhr.open("GET", "https://video-game-news.p.rapidapi.com/resident_evil");
+xhr.open("GET", "https://video-game-news.p.rapidapi.com/mario");
 xhr.setRequestHeader("x-rapidapi-host", "video-game-news.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "3b6acb3744mshb92e3e4b96c4b74p1476ecjsn62611cd550ee");
 xhr.send(data);
