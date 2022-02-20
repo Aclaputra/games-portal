@@ -1,2 +1,2 @@
 # game-news
-Built news games portal with html, css, javascript with game news api
+Built game news portal with html, css, javascript with game news api
