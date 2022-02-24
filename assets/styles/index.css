@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+/* 
+text: #272418
+body: #DAB319
+nav: #E7E6E3
+article: #FEDE59
+header: #FFE57C
+*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #272418;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+p {
+    overflow-wrap: break-word;
+}
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:#35352d;
+    height: 1px;
+    padding: 0.5px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+li {
+    list-style: none;
+}
+body {
+    background-color: #21325E;
+}
+header {
+    /* background-color: #F0F0F0; */
+    background: rgb(240,240,240);
+    background: linear-gradient(236deg, rgba(240,240,240,1) 35%, rgba(62,73,122,1) 100%, rgba(33,50,94,1) 100%);
+    width: 100%;
+    /* display: inline; */
+    height: 100%;
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+.header-title {
+    flex-grow: 2;
+    padding: 70px;
+    font-size: 1.7em;
+}
+.header-title h1, .header-title h2, button {
+    font-weight: 600;
+}
+/* .header-title h1 {
+    text-shadow: 10px 0px 15px rgba(0, 0, 0, 0.60);
+} */
+nav h1 {
+    font-weight: 500;
+}
+button {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F1D00A;
+    color: #272418;
+    border: 0px solid;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.35);
+    transition: 0.3s all ease;
+    font-weight: 600;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+button:hover {
+    background-color: #f3efe0;
+    color: #272418;
+    border: 2px solid;
+    transform: scale(1.1, 1.1);
+}
+
+.nav-top {
+}
+.nav-bottom {
+    background: rgb(188,209,255);
+    background: linear-gradient(236deg, rgba(188,209,255,1) 0%, rgba(79,98,182,1) 35%, rgba(33,50,94,1) 100%);
+    
+}
+nav {
+    display: flex;
+    top: 0;
+    padding: 10px 20px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    box-shadow: 10px 0px 10px rgba(0,0,0,0.35);
+}
+nav h1, nav h2, h1 {
+    color: #F1D00A;
+}
+iframe {
+    border-radius: 20px;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.35);
+    margin: 20px;
+    /* sementara */
+    /* margin: 20px; */
+}
+
+main {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+article{
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.35);
+    overflow-y: scroll;
+}
+article > *, aside > *, aside ul li p {
+    color: #F0F0F0;
+}
+.article__one {
+    height: 550px;
+    /* max-width: fit-content; */
+    /* overflow: scroll; */
+}
+article h1, aside h1 {
+    color: #F1D00A;
+}
+article h3 {
+    margin: 10px 10px;
+}
+article, aside {
+    background-color: #3E497A;
+    /* background-color: #f3efe0; */
+    /* max-height: fit-content; */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+aside {
+    /* background-color: #f3efe0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside ul li {
+    padding: 2px;
+}
+#content {
+    
+}
+aside h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    background-color: #F1D00A;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.35);
+}
+
+/* responsive */
+@media screen and (max-width: 1336px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        display: flex;
+    }
+    aside img {
+        width: 200px;
+    }
+    aside hr {
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    iframe {
+        margin: 10px auto;
+    }
+    .header-title {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    main {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    iframe {
+        width: 90%;
+        height: 240px;
+        margin: 5px auto;
+    }
+    .header-container {
+        padding: 30px;
+    }
+    button {
+        margin: 10px;
+    }
+    h2 {
+
+    }
+}
