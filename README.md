@@ -1,3 +1,3 @@
 # :video_game: game-news
-Built game news portal with html, css, javascript with game news api
+Built Game News Portal with HTML, CSS, Vanilla Javascript & AJAX using Game News API 
 ![](readme/games-portal-main.png)
